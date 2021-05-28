@@ -11,4 +11,5 @@ Promise
   .all([ryanPromise, scottPromise, wesPromise])
   .then(([ryan, scott, wes]) => {
     console.log(ryan.data.name, scott.data.name, wes.data.name);
-  });
+  })
+  .catch((error) => console.log(error));
